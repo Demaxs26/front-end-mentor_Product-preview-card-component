@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  background-color: hsl(30, 38%, 92%);
+
+  
+}
+
+body{
+
+}
+
+
+.main-box{
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  display: block;
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 0.625rem;
+  width: 19.063rem;
+  font-size: 0.875rem;
+  font-family: 'Montserrat';
+
+
+
+}
+
+/* header */
+
+header{
+  width: 100%;
+  height:210px; 
+  position: relative;
+  background-image: url(images/image-product-mobile.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  
+
+}
+
+
+/* main page */
+
+.main-page{
+  margin: 1.25rem;
+  position: relative;
+}
+
+.description{
+  letter-spacing: 0.25rem;
+  color:  hsl(228, 12%, 48%);
+ 
+}
+
+.title{
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  line-height: 1.8rem;
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces';
+}
+
+.paragraph{
+  font-size :0.794rem;
+  line-height: 1.25rem;
+  color:  hsl(228, 12%, 48%);
+}
+
+
+/* foot page */
+
+.price{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.413rem;
+}
+
+.true-price{
+  color:  hsl(158, 36%, 37%);
+  font-family: 'Fraunces';
+  font-size: 1.813rem;
+  font-weight: bold;
+}
+
+
+
+.paragraph-barre{
+  text-decoration: line-through;
+  text-decoration-thickness: 0.063rem ;
+  margin-left: 1.25rem;
+  color:  hsl(228, 12%, 48%);
+}
+
+.green-button{
+  background-color: hsl(158, 36%, 37%);
+  display : flex;
+  justify-content: center;
+  padding: 0.938rem 0.938rem;
+  border-radius: 0.625rem;
+}
+
+
+.green-button:hover{
+  background-color:rgb(26, 64, 49);
+}
+
+
+t{
+  font-size: 0.875rem;
+  margin-left: 0.625rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* responsive part  */
+
+
+@media screen and (min-width : 700px){
+  header{
+    background: url(images/image-product-desktop.jpg);
+    background-size: 100%;
+    height: 378px;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius:  0.625rem;
+
+   
+    
+  }
+  .main-box{
+    display: inline-flex;
+    width: 492px;
+
+  }
+
+  .main-page{
+   
+    max-width: 200px;
+
+
+  }
+}
